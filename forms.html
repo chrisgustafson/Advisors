@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Example Site - Text</title>
+
+    <!-- Custom Style CSS -->
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand asset-wrapper asset-brand" href="index.html">
+            <img src="img/logo.png" class="brand-img" alt="Brand Logo">
+            <span class="brand-text">The Anderson Group</span>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" role="navigation">
+          <ul class="nav navbar-nav asset-nav">
+            <li><a href="index.html">CTA</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="text2.html">Text2</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li class="active"><a href="forms.html">Forms</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="misc.html">Misc</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="primary-content" role="main">
+
+      <section class="bg-white col_1 content_form">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="asset-wrapper asset-form">
+                <div id="ContactForm1">
+                  <div id="FormDiv1">
+                    <form class="form-horizontal" data-val-ecform="true">
+                      <fieldset>
+                        <legend>Contact Me</legend><!--ALERT - needs legend element, aria-label attribute, aria-labelledby attribute for WCAG 2.0 Level AAA-->
+                        <!-- Form Name -->
+                        <input type="hidden" name="InquiryXsltId" value="11">
+                        <input type="hidden" name="InquiryTo" value="demo@uat.com">
+                        <input type="hidden" name="ECOwnerId" value="1058">
+                        <input type="hidden" name="ECInquiryType" value="Contact">
+                        <input type="hidden" name="ECInquirySource" value="Website">
+                        <input type="hidden" name="ECArgumentList" value="">
+                        <input type="hidden" name="ECEmailFieldName" value="">
+                        <div style="min-height:10px;"></div>
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtFirstName1">First Name<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true" data-val-type="AlphaPlusOnly">
+                            <input id="txtFirstName1" name="txtFirstName1" data-val-this="true" type="text" placeholder="" class="input-xlarge" data-val-required="true">
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtLastName1">Last Name<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true" data-val-type="AlphaPlusOnly">
+                            <input id="txtLastName1" name="txtLastName1" data-val-this="true" type="text" placeholder="" class="input-xlarge" data-val-required="true">
+                          </div>
+                        </div>
+
+                                                <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtEmailAddress1">Email Address<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true" data-val-type="Email">
+                            <input id="txtEmailAddress1" name="txtEmailAddress1" data-val-this="true" type="text" placeholder="" class="input-xlarge" data-val-required="true">
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtBusinessPhone">Phone Number</label>
+                          <div class="controls" data-val-required="false" data-val-type="PhoneNumber">
+                            <input id="txtBusinessPhone" name="txtBusinessPhone" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtAddress1">Address</label>
+                          <div class="controls" data-val-required="false" data-val-type="None">
+                            <input id="txtAddress1" name="txtAddress1" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtCity1">City</label>
+                          <div class="controls" data-val-required="false" data-val-type="None">
+                            <input id="txtCity1" name="txtCity1" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="control-group">
+                          <label class="control-label" for="ddlState1">State</label>
+                          <div class="controls" data-val-required="false">
+                            <select id="ddlState1" data-val-this="true" name="ddlState1" class="input-xlarge">
+                              <option>-Select-</option>
+                              <option>AL</option>
+                              <option>AK</option>
+                              <option>AZ</option>
+                              <option>AR</option>
+                              <option>CA</option>
+                              <option>CO</option>
+                              <option>CT</option>
+                              <option>DE</option>
+                              <option>DC</option>
+                              <option>FL</option>
+                              <option>GA</option>
+                              <option>HI</option>
+                              <option>ID</option>
+                              <option>IL</option>
+                              <option>IN</option>
+                              <option>IA</option>
+                              <option>KS</option>
+                              <option>KT</option>
+                              <option>LA</option>
+                              <option>ME</option>
+                              <option>MD</option>
+                              <option>MA</option>
+                              <option>MI</option>
+                              <option>MN</option>
+                              <option>MS</option>
+                              <option>MI</option>
+                              <option>MO</option>
+                              <option>NE</option>
+                              <option>NV</option>
+                              <option>NH</option>
+                              <option>NJ</option>
+                              <option>NM</option>
+                              <option>NY</option>
+                              <option>NC</option>
+                              <option>ND</option>
+                              <option>OH</option>
+                              <option>OK</option>
+                              <option>OR</option>
+                              <option>PA</option>
+                              <option>RI</option>
+                              <option>SC</option>
+                              <option>SD</option>
+                              <option>TN</option>
+                              <option>UT</option>
+                              <option>VT</option>
+                              <option>VA</option>
+                              <option>WA</option>
+                              <option>WV</option>
+                              <option>WI</option>
+                              <option>WY</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtPostalCode1">ZIP</label>
+                          <div class="controls" data-val-required="false" data-val-type="USZip">
+                            <input id="txtPostalCode1" name="txtPostalCode1" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="control-group">
+                          <label class="control-label" for="txtComments1">Comments<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true">                     
+                            <textarea id="txtComments1" data-val-this="true" name="txtComments1"></textarea>
+                          </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="control-group">
+                          <label class="control-label" for="singlebutton1"></label>
+                          <div class="controls">
+                            <button id="singlebutton1" name="singlebutton1" type="submit" class="btn btn-lg btn-default">Submit</button>
+                          </div>
+                        </div>
+
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-dark col_2 content_form">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <div class="asset-wrapper asset-text">
+                <h1>Contact Us</h1>
+                <div class="WYSIWYG">
+                  <p>This is content entered using a WYSIWYG Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper quis eros at malesuada. Nulla volutpat lacus at quam hendrerit sodales. Aenean enim elit, pellentesque in diam eget, pharetra euismod dui. Fusce vitae eros nunc. Morbi id magna in nisl tincidunt luctus. Praesent sed sollicitudin enim, et scelerisque tortor.<p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <div class="asset-wrapper asset-form">
+                <div id="ContactForm2">
+                  <div id="FormDiv2">
+                    <form class="form-horizontal" data-val-ecform="true">
+                      <fieldset>
+                        <legend>Contact Me</legend><!--ALERT - needs legend element, aria-label attribute, aria-labelledby attribute for WCAG 2.0 Level AAA-->
+                        <!-- Form Name -->
+                        <input type="hidden" name="InquiryXsltId" value="11">
+                        <input type="hidden" name="InquiryTo" value="demo@uat.com">
+                        <input type="hidden" name="ECOwnerId" value="1058">
+                        <input type="hidden" name="ECInquiryType" value="Contact">
+                        <input type="hidden" name="ECInquirySource" value="Website">
+                        <input type="hidden" name="ECArgumentList" value="">
+                        <input type="hidden" name="ECEmailFieldName" value="">
+                        <div style="min-height:10px;"></div>
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtFirstName2">First Name<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true" data-val-type="AlphaPlusOnly">
+                            <input id="txtFirstName2" name="txtFirstName2" data-val-this="true" type="text" placeholder="" class="input-xlarge" data-val-required="true">
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtLastName2">Last Name<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true" data-val-type="AlphaPlusOnly">
+                            <input id="txtLastName2" name="txtLastName2" data-val-this="true" type="text" placeholder="" class="input-xlarge" data-val-required="true">
+                          </div>
+                        </div>
+
+                                                <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtEmailAddress2">Email Address<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true" data-val-type="Email">
+                            <input id="txtEmailAddress2" name="txtEmailAddress2" data-val-this="true" type="text" placeholder="" class="input-xlarge" data-val-required="true">
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtBusinessPhone2">Phone Number</label>
+                          <div class="controls" data-val-required="false" data-val-type="PhoneNumber">
+                            <input id="txtBusinessPhone2" name="txtBusinessPhone2" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtAddress2">Address</label>
+                          <div class="controls" data-val-required="false" data-val-type="None">
+                            <input id="txtAddress2" name="txtAddress2" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtCity2">City</label>
+                          <div class="controls" data-val-required="false" data-val-type="None">
+                            <input id="txtCity2" name="txtCity2" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="control-group">
+                          <label class="control-label" for="ddlState2">State</label>
+                          <div class="controls" data-val-required="false">
+                            <select id="ddlState2" data-val-this="true" name="ddlState2" class="input-xlarge">
+                              <option>-Select-</option>
+                              <option>AL</option>
+                              <option>AK</option>
+                              <option>AZ</option>
+                              <option>AR</option>
+                              <option>CA</option>
+                              <option>CO</option>
+                              <option>CT</option>
+                              <option>DE</option>
+                              <option>DC</option>
+                              <option>FL</option>
+                              <option>GA</option>
+                              <option>HI</option>
+                              <option>ID</option>
+                              <option>IL</option>
+                              <option>IN</option>
+                              <option>IA</option>
+                              <option>KS</option>
+                              <option>KT</option>
+                              <option>LA</option>
+                              <option>ME</option>
+                              <option>MD</option>
+                              <option>MA</option>
+                              <option>MI</option>
+                              <option>MN</option>
+                              <option>MS</option>
+                              <option>MI</option>
+                              <option>MO</option>
+                              <option>NE</option>
+                              <option>NV</option>
+                              <option>NH</option>
+                              <option>NJ</option>
+                              <option>NM</option>
+                              <option>NY</option>
+                              <option>NC</option>
+                              <option>ND</option>
+                              <option>OH</option>
+                              <option>OK</option>
+                              <option>OR</option>
+                              <option>PA</option>
+                              <option>RI</option>
+                              <option>SC</option>
+                              <option>SD</option>
+                              <option>TN</option>
+                              <option>UT</option>
+                              <option>VT</option>
+                              <option>VA</option>
+                              <option>WA</option>
+                              <option>WV</option>
+                              <option>WI</option>
+                              <option>WY</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                          <label class="control-label" for="txtPostalCode2">ZIP</label>
+                          <div class="controls" data-val-required="false" data-val-type="USZip">
+                            <input id="txtPostalCode2" name="txtPostalCode2" data-val-this="true" type="text" placeholder="" class="input-xlarge">
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="control-group">
+                          <label class="control-label" for="txtComments2">Comments<span class="requiredNotation">*</span></label>
+                          <div class="controls" data-val-required="true">                     
+                            <textarea id="txtComments2" data-val-this="true" name="txtComments2"></textarea>
+                          </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="control-group">
+                          <label class="control-label" for="singlebutton2"></label>
+                          <div class="controls">
+                            <button id="singlebutton2" name="singlebutton2" type="submit" class="btn btn-lg btn-default">Submit</button>
+                          </div>
+                        </div>
+
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div id="SuccessDiv" style="display:none;">Thank you for your inquiry.</div>
+                  <div id="FailedDiv" style="display:none;">We're sorry, your submission did not get sent successfully. &nbsp;Please try again or contact us by phone.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- /primary-content -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="asset-wrapper asset-brand">
+            <a href="#">
+              <img src="img/logo.png" class="brand-img" alt="Brand Logo">
+              <span class="brand-text">Example Site</span>
+            </a>
+          </div>
+          <div class="asset-wrapper asset-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="asset-wrapper asset-disclaimer">
+            <div class="WYSIWYG">
+              <p>This is content entered using a WYSIWYG Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper quis eros at malesuada. Nulla volutpat lacus at quam hendrerit sodales. Aenean enim elit, pellentesque in diam eget, pharetra euismod dui. Fusce vitae eros nunc. Morbi id magna in nislThis is content entered using a WYSIWYG Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper quis eros at malesuada. Nulla volutpat lacus at quam hendrerit sodales. Aenean enim elit, pellentesque in diam eget, pharetra euismod dui. Fusce vitae eros nunc. Morbi id magna in nislThis is content entered using a WYSIWYG Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper quis eros at malesuada. Nulla volutpat lacus at quam hendrerit sodales. Aenean enim elit, pellentesque in diam eget, pharetra euismod dui. Fusce vitae eros nunc. Morbi id magna in nisl<p>
+            </div>
+            <div class="WYSIWYG">
+              <p>Copyright @ 2017<p>
+            </div>
+          </div>
+          
+          <div class="asset-wrapper asset-contact">
+            <ul>
+              <li><a href="#">1231 W 36th Street<br/>Suite 404<br/>NY, New York 123123</a></li>
+              <li><a href="#">1-999-555-5555</a></li>
+              <li><a href="#">Send a Message</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
